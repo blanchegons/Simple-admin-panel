@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+ 
+    <link rel="stylesheet" href="stylenav.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/logo.png" alt=""></i>Blaryn
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="images/profile.jpg" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <a href="dashboard.html" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <!-- <i class="bx bx-chevron-right arrow-left"></i> -->
+            </a>
+
+            <!-- <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li> -->
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <!-- <li class="item">
+            <div href="adminpannel\dashboard.html" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li> -->
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="fproduct.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">FProducts</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="productcategory.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Product Categories</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="cosmeticproduct.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">Cosmetic Products</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#"  class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Other Products</span>
+               <i class="bx bx-chevron-right arrow-left"></i>
+            </a>
+            <ul class="menu_items submenu">
+              <a href="Menproduct.html" class="nav_link sublink">Men Product</a>
+              <a href="Womenproduct.html" class="nav_link sublink">Women Products</a>
+              <!-- <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a> -->
+            </ul>
+          </li>
+        </ul>
+       
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="script1.js"></script>
+
+
+    <!-- <main></main> -->
+
+    <!-- producttable -->
+<div class="container1">
+    <form class="container" method="get">
+      <div class="row">
+        <div class="col-25">
+          <label for="product_name">Product Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="" name="product_name" placeholder="Your product Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="product_price_original">Product Price Original</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="product_price_original" name="product-original-price" placeholder="Original Price">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="product_price_discount">Product Price Discount</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="product_price_discount" name="product-discounted-price" placeholder="Discount Price">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="product_image_1">Product Image 1</label>
+        </div>
+        <div class="col-75">
+            <input type="file" id="product_image_1" name="product-img">
+                </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="product_image_2">Product Image 2 </label>
+        </div>
+        <div class="col-75">
+            <input type="file" id="product_image_2" name="product-img">
+                </div>
+      </div>
+<!-- 
+      <div class="row">
+        <div class="col-25">
+          <label for="product_link">Product Link</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="product_link" name="product_link" placeholder="Product Link">
+        </div>
+      </div> -->
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="rating">Product Rating</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="rating" placeholder="Rating">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="product_category">Product Category</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="product_category" placeholder="Product Category">
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="description">Product Discription</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="description" placeholder="Product description">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="style">Product Style </label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="description" placeholder="Product Style">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="composition">Product Composition</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="composition" placeholder="Product Composition">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="address_detail">Address Detail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="address_detail" placeholder="Address Detail">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="generic_type">Generic Type</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="generic_type" placeholder="Generic Type">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="pack_size">Pack Size</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pack_size" placeholder="Pack Size">
+        </div>
+      </div>
+      
+     
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="style">Product ID</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="style" placeholder="Product ID">
+        </div>
+      </div>
+
+      
+      <div >
+        <button type="submit" onclick="GetData();" class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+       <!-- Start Table Here -->
+<!-- <h1 class="text-center">Form Values in Table</h1> -->
+<div class="table1" style="width: 50%; padding-bottom: 10%;">
+    <table class="table " style="width: 10%;">
+      <thead>
+          <tr >
+              <th class="text-center">Product name</th>
+              <th class="text-center">Product Price Original</th>
+              <th class="text-center">Product Price Discount</th>
+              <th class="text-center">Product Image 1</th>
+              <th class="text-center">Product Image 2</th>
+                      <th class="text-center">Rating</th>
+              
+              <th class="text-center">Product Category</th>
+              <th class="text-center">Description</th>
+              <th class="text-center">Style</th>
+              <th class="text-center">Composition</th>
+              <th class="text-center">Address</th>
+              <th class="text-center">Generic Type</th>
+              
+              <th class="text-center">Pack Size</th>
+              <th class="text-center">Product ID</th>
+              
+          </tr>
+      </thead>
+</table>
+</div>
+
+
+  </body>
+</html>

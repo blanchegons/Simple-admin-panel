@@ -1,0 +1,321 @@
+
+
+
+
+
+
+  <!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  
+    <link rel="stylesheet" href="stylenav.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/logo.png" alt=""></i>Blaryn
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="images/profile.jpg" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="navbar">
+        <div class="logo_item">
+          <i class="bx bx-menu" id="sidebarOpen"></i>
+          <img src="images/logo.png" alt=""></i>Blaryn
+        </div>
+  
+        <div class="search_bar">
+          <input type="text" placeholder="Search" />
+        </div>
+  
+        <div class="navbar_content">
+          <i class="bi bi-grid"></i>
+          <i class='bx bx-sun' id="darkLight"></i>
+          <i class='bx bx-bell' ></i>
+          <img src="images/profile.jpg" alt="" class="profile" />
+        </div>
+      </nav>
+  
+      <!-- sidebar -->
+      <nav class="sidebar">
+        <div class="menu_content">
+          <ul class="menu_items">
+            <div class="menu_title menu_dahsboard"></div>
+            <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+            <!-- start -->
+            <li class="item">
+              <a href="dashboard.html" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bx-home-alt"></i>
+                </span>
+                <span class="navlink">Home</span>
+                <!-- <i class="bx bx-chevron-right arrow-left"></i> -->
+            </a>
+  
+              <!-- <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              </ul>
+            </li> -->
+            <!-- end -->
+  
+            <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+            <!-- start -->
+            <!-- <li class="item">
+              <div href="adminpannel\dashboard.html" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bx-grid-alt"></i>
+                </span>
+                <span class="navlink">Overview</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+  
+              <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              </ul>
+            </li> -->
+            <!-- end -->
+          </ul>
+  
+          <ul class="menu_items">
+            <div class="menu_title menu_editor"></div>
+            <!-- duplicate these li tag if you want to add or remove navlink only -->
+            <!-- Start -->
+            <li class="item">
+              <a href="fproduct.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bxs-magic-wand"></i>
+                </span>
+                <span class="navlink">FProducts</span>
+              </a>
+            </li>
+            <!-- End -->
+  
+            <li class="item">
+              <a href="productcategory.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-loader-circle"></i>
+                </span>
+                <span class="navlink">Product Categories</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="cosmeticproduct.html" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-filter"></i>
+                </span>
+                <span class="navlink">Cosmetic Products</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#"  class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bx-cloud-upload"></i>
+                </span>
+                <span class="navlink">Other Products</span>
+                 <i class="bx bx-chevron-right arrow-left"></i>
+              </a>
+              <ul class="menu_items submenu">
+                <a href="Menproduct.html" class="nav_link sublink">Men Product</a>
+                <a href="Womenproduct.html" class="nav_link sublink">Women Product</a>
+                <!-- <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a> -->
+              </ul>
+            </li>
+          </ul>
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="script1.js"></script>
+
+
+    <!-- <main></main> -->
+
+    <!-- producttable -->
+<div class="container1">
+    <form class="container">
+        <div class="row">
+            <div class="col-25">
+              <label for="product_name">Product Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="" name="product_name" placeholder="Your product Name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="product_price_original">Product Price Original</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="product_price_original" name="product-original-price" placeholder="Original Price">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="product_price_discount">Product Price Discount</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="product_price_discount" name="product-discounted-price" placeholder="Discount Price">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="product_image">Product Image</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="product_image" name="filename">
+                    </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="product_link">Product Link</label>
+            </div>
+            <div class="col-75">
+              <input type="file" id="product_link" name="product_link" placeholder="Product Link">
+            </div>
+          </div>
+    
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="rating">Product Rating</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="rating" placeholder="Rating">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="product_category">Product Category</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="product_category" placeholder="Product Category">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="product_id">Product ID</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="product_id" placeholder="Product Category">
+            </div>
+          </div>
+    
+    
+          
+          <div >
+            <button id="entry">Submit</button>
+          </div>
+        </form>
+  </div>
+
+
+       <!-- Start Table Here -->
+<!-- <h1 class="text-center">Form Values in Table</h1> -->
+<div class="table1" id="display"  style="width: 50%; margin-left: 13%; padding-bottom: 10%;">
+    <table class="table " id="display" style="width: 10%;">
+        <thead>
+            <tr >
+                <th class="text-center">Product name</th>
+                <th class="text-center">Product Price Original</th>
+                <th class="text-center">Product Price Discount</th>
+                <th class="text-center">Product Image</th>
+                <th class="text-center">Product Link</th>
+                <th class="text-center">Rating</th>
+                <th class="text-center">Product Rating</th>
+                <th class="text-center">Product Category</th>
+                <th class="text-center">Product ID</th>
+               
+            </tr>
+        </thead>
+</table>
+</div>
+
+<script>
+    var entry = document.getElementById("entry");
+entry.addEventListener("click,displayDetails");
+
+var row =1;
+
+function displayDetails (){
+var product_name = document.getElementById("product_name").value;
+var product_price_original = document.getElementById("product_price_original").value;
+var product_price_discount = document.getElementById("product_price_discount").value;
+var product_image = document.getElementById("product_image").value;
+var product_link= document.getElementById("product_link").value;
+var rating = document.getElementById("rating").value;
+var product_category = document.getElementById("product_category").value;
+var product_id = document.getElementById("product_id").value;
+
+if (!product_name||!product_price_original||!product_price_discount||!product_image||!product_link||!rating||!product_category||!product_id){
+alert("Please fill all data");
+return;
+}
+
+var display = document.getElementById("display");
+
+var newRow = display.insertrow(row);
+
+var cell1 = newRow.insertCell(0);
+var cell2 = newRow.insertCell(1);
+var cell3 = newRow.insertCell(2);
+var cell4 = newRow.insertCell(3);
+var cell5 = newRow.insertCell(4);
+var cell6 = newRow.insertCell(5);
+var cell7 = newRow.insertCell(6);
+var cell8 = newRow.insertCell(7);
+
+cell1.innerHTML = product_name;
+cell2.innerHTML = product_price_original;
+cell3.innerHTML = product_price_discount;
+cell4.innerHTML = product_image;
+cell5.innerHTML = product_link;
+cell6.innerHTML = rating;
+cell7.innerHTML = product_category;
+cell8.innerHTML = product_id;
+
+row++;
+}
+</script>
+
+
+  </body>
+</html>
